@@ -8,12 +8,13 @@
 h2 {
     font-size: 2em;
     color: #0e1674;
-    text-shadow: 1px 1px 1px #000000,
-                 1px 1px 1px #000000;
+    text-shadow: 2px 2px 2px #000000, 2px 2px 2px #000000;
     text-align: center;
     font-family: "Engravers MT";
     padding: 1.1em;
 }
+
+/* COMEÇO DA NAV */
 
 .nav {
     display: flex;
@@ -44,17 +45,14 @@ h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* FIM DA NAV */
+
+/* COMEÇO DO BANNER */
+
 .linha_amr {
     background-color: #e0b00a;
     width: 100%;
     height: 40px;
-}
-
-.coluna_amr {
-    margin-left: 40%;
-    background-color: #e0b00a;
-    height: 2em;
-    width: 10px;
 }
 
 #nome_empresa {
@@ -94,6 +92,53 @@ h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* FIM DO BANNER */
+
+/* COMEÇO DO PRODUTO */
+
+.produto {
+    padding: 2em;
+    background-color: #0e1674;
+    color: #fff;
+}
+
+.produto h2 {
+    color: #fff;
+}
+
+.produto img {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.prod_content1 {
+    margin: 0 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+.prod_content2 {
+    margin: 50px 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+#video {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* FIM DO PRODUTO */
+
+/* COMEÇO DA HISTORIA */
+
 .historia {
     margin: 0 100px 0 100px;
     text-align: center;
@@ -103,7 +148,7 @@ h2 {
     margin-left: 940px;
     margin-top: 50px;
     padding: 1.5em;
-}    
+}
 
 .hist_content {
     text-align: center;
@@ -113,7 +158,11 @@ h2 {
 .hist_imgs {
     padding: 2em;
     display: flex;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
+}
+
+.imgs_prof {
+    background-color: #ffffff;
 }
 
 .linha_amr2 {
@@ -123,12 +172,61 @@ h2 {
     margin: auto;
 }
 
-.produto {
+/* FIM DA HISTTORIA */
+
+/* COMEÇO DOS PLANOS  */
+
+.planos {
+    margin-top: 50px;
     padding: 2em;
     background-color: #0e1674;
+    color: #fff;
+    background-image: url(../img/banner\ -\ img3.jpg);
 }
 
-.produto h2 {
+.planos h2 {
     color: #fff;
 }
 
+.planos_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 1.2em;
+    height: 700px;
+}
+
+.planos_box>div {
+    width: 23%;
+    background-color: #0e1674;
+    margin-top: -200px;
+    padding: 1.2em;
+    height: 80%;
+    border-bottom-style: solid;
+    border-bottom-width: 2em;
+    border-bottom-color: #e0b00a;
+}
+
+.planos h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 1.1em;
+}
+
+.planos h4 {
+    background-color: #e0b00a;
+    color: #0e1674;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    width: 100%;
+    margin-top: 60%;
+}
+
+#gratis_box {
+    display: flex;
+    justify-content: center;
+}
