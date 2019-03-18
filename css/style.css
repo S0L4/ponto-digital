@@ -25,12 +25,17 @@ h2 {
     padding-left: 4em;
 }
 
-.nav>ul {
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav > ul {
     display: flex;
     justify-content: space-around;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #fff;
-    margin-top: 230px;
+    margin-top: 250px;
     margin-left: auto;
 }
 
@@ -45,15 +50,23 @@ h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* FIM DA NAV */
-
-/* COMEÇO DO BANNER */
+.nav li:hover {
+    background-color: #e0b00a;
+    text-shadow: 2px 2px 0 #000000, 2px 2px 0 #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
 .linha_amr {
     background-color: #e0b00a;
     width: 100%;
     height: 40px;
 }
+
+/* FIM DA NAV */
+
+/* COMEÇO DO BANNER */
+
 
 #nome_empresa {
     font-size: 3.5em;
@@ -120,6 +133,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     font-size: 1.5em;
+    text-align: center;
 }
 
 .prod_content2 {
@@ -127,6 +141,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     font-size: 1.5em;
+    text-align: center;
 }
 
 #video {
@@ -255,12 +270,12 @@ h2 {
 #pagamento {
     width: 500px;
     height: 150px;
-    margin-left: 25em;
+    margin-left: 14.5em;
 }
 
-    /* FIM DOS PLANOS */
+/* FIM DOS PLANOS */
 
-    /* COMEÇO DO CONTATO */
+/* COMEÇO DO CONTATO */
 
 .contato {
     padding: 2em;
@@ -281,10 +296,22 @@ h2 {
 
 #sac_box {
     background-color: #0e1674;
-    width: 43 %;
+    width: 43%;
     color: #fff;
     text-align: center;
-    margin-left: 5%;
+    margin-left: 5.5%;
+    padding: 1.2em;
+    font-size: 1.5em;
+    border-bottom-style: solid;
+    border-bottom-width: 2em;
+    border-bottom-color: #e0b00a;
+}
+
+#form_contat {
+    background-color: #0e1674;
+    width: 43%;
+    color: #fff;
+    margin-left: 2em;
     padding: 1.2em;
     font-size: 1.5em;
     border-bottom-style: solid;
@@ -345,14 +372,232 @@ h2 {
     margin-top: 50px;
 }
 
-#form_contat {
-    background-color: #0e1674;
-    width: 43%;
+/* FIM DO CONTATO */
+
+.rodape {
+    background-color: #000000;
+    padding: 2em;
+    font-size: 0.8em;
     color: #fff;
-    margin-left: 2em;
-    padding: 1.2em;
-    font-size: 1.5em;
-    border-bottom-style: solid;
-    border-bottom-width: 2em;
-    border-bottom-color: #e0b00a;
+    text-align: center;
+}
+
+/* COMEÇO DO LAYOUT RESPONSIVO */
+
+@media screen and (max-width: 768px){
+
+    .banner {
+        height: 500px;
+    }
+
+    #nome_empresa {
+        font-size: 2.5em;
+    }
+
+    #text_chamativo {
+        font-size: 1em;
+    }
+
+    .produto img {
+        width: 400px;
+        height: 400px;
+        margin-top: 50px;
+    }
+
+    .prod_content1 {
+        display: block;
+    }
+
+    .prod_content2 {
+        display: block;
+    }
+
+    .hist_imgs {
+        display: block;
+        margin-left: -35px;
+    }
+
+    .imgs_prof {
+        display: flex;
+    }
+
+    .planos_box {
+        font-size: 0.9em;
+    }
+
+    .planos h3 {
+        font-size: 1.5em;
+    }
+
+    .planos h4 {
+        margin-top: 40%;
+        font-size: 1.1em;
+    }
+
+    #gratis_box {
+        margin-left: 10px;
+        font-size: 1em;
+    }
+
+    #gratis_box h4 {
+        margin-bottom: -45px;
+    }
+
+    #pagamento img {
+        width: 350px;
+        height: 80px;
+        margin-left: -3.5em;
+        margin-top: 30px;
+    }
+
+    .coment {
+        width: 93%;
+        margin-left: 38px;
+        font-size: 0.6em;
+    }
+
+    .coment img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .coment h3 {
+        font-size: 2em;
+    }
+
+    .perfil_coment1 p {
+        margin-top: 9px;
+        margin-left: 10px;
+    }
+
+    .perfil_coment2 p {
+        margin-top: 9px;
+        margin-left: 10px;
+    }
+
+    .perfil_coment3 p {
+        margin-top: 9px;
+        margin-left: 10px;
+    }
+
+    .contato h3 {
+        font-size: 1.5em;
+    }
+
+    #sac_box {
+        font-size: 1.2em;
+    }
+
+    #form_contat {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    .nav img {
+       width: 200px;
+       height: 200px;
+       margin-top: 50px;
+       margin-left: 50px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    #nome_empresa {
+        font-size: 2em;
+        padding-top: 8%;
+    }
+
+    #text_chamativo {
+        font-size: 0.8em;
+    }
+
+    .produto {
+        padding: 1.5em;
+    }
+
+    .produto p {
+        font-size: 0.8em;
+    }
+
+    .produto img {
+        width: 200px;
+        height: 200px;
+        margin-left: -15px;
+    }
+    
+    .produto iframe {
+        height: 200px;  
+    }
+
+    .historia {
+        padding: 1.5em;
+    }
+
+    .hist_content {
+        font-size: 0.9em;
+    }
+
+    .hist_imgs {
+        margin-left: -20px;
+    }
+    
+    .hist_imgs img {
+        width: 350px;
+        height: 250px;
+    }
+
+    .imgs_prof {
+        display: block;
+    }
+
+    .historia iframe {
+        height: 200px;
+    }  
+
+    .contato {
+        padding: 1.5em;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    #sac_box {
+        width: 89%;
+        margin-bottom: 30px;
+    }
+
+    #form_contat {
+        width: 89%;
+        margin-left: 20px;
+    }
+
+    .coment {
+        width: 93%;
+        margin-left: 13px;
+        font-size: 0.6em;
+    }
+
+    .perfil_coment1 {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
+
+    .perfil_coment2 {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
+
+    .perfil_coment3 {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
 }
